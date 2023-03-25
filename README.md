@@ -1,5 +1,13 @@
 # Securing Medical Images with PVD
 
+# Introduction
+
+The amount of digital visual data (image, video and 3D object) has increased rapidly on the Internet. Image, video and 3D object security becomes increasingly important for many applications, e.g., confidential transmission, video surveillance, military and medical applications. For example, the necessity of fast and secure diagnosis is vital in the medical world. Nowadays, the transmission of visual data is a daily routine and it is necessary to find an efficient way to transmit them over networks.  
+
+The works presented in this project show how encryption algorithms provide security to medical imagery. The main objective is to guarantee the protection of medical images during transmission, and also once this digital data is archived. The subsequent challenge is to ensure that such coding withstands severe treatment such as compression. When a physician receives a visit from a patient, he often requires a specialist opinion before giving a diagnosis. One possible solution is to send images of the patient, along with a specialist report, over a computer network. A region of Interest (ROI) of a medical image is an area including important information and must be stored without distortion. Nevertheless, computer networks are complex and espionage is a potential risk. We are therefore faced with a real security problem when sending data. For ethical reasons, medical imagery cannot be sent when such a risk is present, and has to be better protected. Encryption is the best form of protection in cases such as this. Many different techniques for the encryption of text already exist.
+
+In this project, we first try to embed the patient data of a hospital by using Pixel Value Differencing and then the second part includes the encryption and decryption of data using RSA Algorithm. The accuracy of both the algorithms were measured in the working of the project and the best out of the both shall be recommended for the use in real world implementation.  
+
 # Proposed Methodology
 Along with RSA encryption, a PVD embedding method has been proposed. We use RSA encryption to encrypt patient data. The PVD embedding approach is then used to embed the encrypted data into the medical image.
 
