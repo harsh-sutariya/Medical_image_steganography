@@ -1,23 +1,23 @@
-#Securing Medical Images with PVD
+# Securing Medical Images with PVD
 
 # Proposed Methodology
 Along with RSA encryption, a PVD embedding method has been proposed. We use RSA encryption to encrypt patient data. The PVD embedding approach is then used to embed the encrypted data into the medical image.
 
-1. RSA Encryption
+1. RSA Encryption  
 We take patient data such as name, age, patient id, health issue. We then try to encrypt this data using the RSA Encryption Algorithm.
 
-  RSA Algorithm(To Generate Key Pair):-
-    A. Select a value of e from 3,5,17,257,65537
-    B. repeat
-    C. p ← genprime(k/2)
-    D. until (p mod e) ≠ 1
-    E. repeat
-    F. q ← genprime(k - k/2)
-    G. until (q mod e) ≠ 1
-    H. N ← pq
-    I. L ← (p-1)(q-1)
-    J. d ← modinv(e, L)
-    K. return (N,e,d)
+  RSA Algorithm(To Generate Key Pair):-  
+    A. Select a value of e from 3,5,17,257,65537  
+    B. repeat  
+    C. p ← genprime(k/2)  
+    D. until (p mod e) ≠ 1  
+    E. repeat  
+    F. q ← genprime(k - k/2)  
+    G. until (q mod e) ≠ 1  
+    H. N ← pq  
+    I. L ← (p-1)(q-1)  
+    J. d ← modinv(e, L)  
+    K. return (N,e,d)  
     
   Encryption :-
   Sender does the following:-
